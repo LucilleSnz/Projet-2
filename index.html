@@ -11,44 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">   
+    <link rel="stylesheet" href="./style.css">   
 </head>
-
-
-
-
 <body>
-    <header> 
-            <aside>
-                <div class="images">
-                    <img src="./images/logo/Booki.png">
-                </div>
-                <div class="menu-link">
-                    <a href="#"> Hébergements</a>
-                    <a href="#"> Activités</a>
-                </div>
-            </aside>
-    </header>
-            <div class="main-container">
+    <div class="main-container"> 
+        <header> 
+            <img class="booki" src="./images/logo/Booki.png">      
+            <nav class="menu-links">
+                <a href="link-hebergements">Hébergements</a>
+                <a href="link-activites">Activités</a>
+            </nav>
+        </header>
         <main>
-            <div class="titres">
-                <h2 class="titre"> Trouvez votre hébergement pour des vacances de rêve </h2>
-                <p class="sous-titre"> En plein centre-ville ou en pleine nature </p>
-            </div>
+            <h2> Trouvez votre hébergement pour des vacances de rêve </h2>
+            <p> En plein centre-ville ou en pleine nature </p>
             <div class="search">
                 <i class="fa-solid fa-location-dot search-icon"></i> 
-                <input class="search-input" id="searchbar" onkeyup="search_lieu()" type="text" name="search" placeholder="Marseille,France"> 
+                <input class="search-input" id="searchbar" onkeyup="search_lieu()" type="text" name="search" placeholder="Marseille, France"> 
                 <button class="search-button">Rechercher</button>
             </div>
-            <p class="filters-icones">Filtres</p>
-                <div class="buttons">   
-                    <a href="#">   
-                        <button class="economique"><a href="#"> <i class="fa-solid fa-money-bill-wave"></i> Économique </button>
-                        <button class="familial"><a href="#"> <i class="fa-solid fa-person"></i> Familial</button>
-                        <button class="romantique"><a href="#"> <i class="fa-solid fa-heart"></i> Romantique </button>
-                        <button class="pepites"><a href="#"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
-                    </a>
+            <div class="filters-icones"> 
+                <p class="filter-text">Filtres</p> 
+                <div class="filter-buttons">
+                    <button class="filter-button"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button class="filter-button"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button class="filter-button"><i class="fa-solid fa-heart"></i>Romantique </button>
+                    <button class="filter-button"><i class="fa-solid fa-fire"></i>Nos pépites</button>
                 </div>
+            </div>
             <div class="info">
                 <p>
                     <i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville
