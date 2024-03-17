@@ -21,6 +21,7 @@ body {
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
+    max-width: 1440px;
 }
 
 a {
@@ -100,10 +101,12 @@ header {
 p {
     margin: 0;
     padding: 0;
+    font-size: 0.8em;
 }
 
 h1{
     margin-bottom: 0px;
+    font-size: 1em;
 }
 
 
@@ -236,7 +239,6 @@ main{
 #afficher-plus{
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .hebergement-cards{
@@ -286,6 +288,10 @@ main{
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
+}
+
+.populaires-cards a {
+    width: 32%;
 }
 
 .populaires-title {
@@ -339,7 +345,7 @@ main{
 .card-activites img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 300px;
+    height: 230px;
     object-fit: cover;
 }
 
@@ -389,6 +395,7 @@ footer{
 
 .listing h3 {
     margin-top: 0px;
+    margin-bottom: -10px;
 }
 
 .a-propos {
@@ -449,15 +456,11 @@ ul{
     }
 
     .populaires-cards .card-title {
-        font-size: 1.1em;
+        font-size: 0.95em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 1em;
-    }
-
-    .card-activites img {
-        height: 250px;
+        font-size: 0.85em;
     }
 
     .a-propos{
@@ -533,11 +536,12 @@ ul{
     .search{
         width: 90%;
         align-self: center;
+        height: 50px;
     }
 
     .search-input{
         font-size: 1em;
-        padding: 12px;
+        padding: 14px;
         text-align: left;
         width: 100%;
     }
@@ -578,13 +582,13 @@ ul{
     .filter-button{
         margin: 8px 5px;
         width: 45%;
-        font-size: 0.85em;
+        font-size: 0.9em;
         text-align: left;
-        padding: 12px 15px;
+        padding: 15px 15px;
     }
 
     .filter-button > i{
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-right: 10px;
     }
 
@@ -744,6 +748,7 @@ ul{
 
     .listing {
         flex-direction: column;
+        font-size: 1.1em;
     }
 
     .listing h3 {
